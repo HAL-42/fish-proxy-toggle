@@ -38,7 +38,7 @@ proxy off
 http_proxy=http://127.0.0.1:7890
 https_proxy=http://127.0.0.1:7890
 all_proxy=socks5://127.0.0.1:7890
-no_proxy=localhost,127.0.0.1,::1,*.local
+no_proxy=localhost,127.0.0.1,::1,.local,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,fc00::/7,.xiaojukeji.com,.didistatic.com,.didichuxing.com,.yunxuetang.cn
 ```
 
 `proxy off` erases:
