@@ -18,7 +18,7 @@ function proxy --description "Set or unset HTTP/HTTPS/SOCKS5 proxy"
     set -gx http_proxy "http://127.0.0.1:$port"
     set -gx https_proxy "http://127.0.0.1:$port"
     set -gx all_proxy "socks5://127.0.0.1:$port"
-    set -gx no_proxy "localhost,127.0.0.1,::1,*.local"
+    set -gx no_proxy "localhost,127.0.0.1,::1,.local,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,fc00::/7,.xiaojukeji.com,.didistatic.com,.didichuxing.com,.yunxuetang.cn"
     if status is-interactive
         echo "Proxy enabled on port $port"
     end
